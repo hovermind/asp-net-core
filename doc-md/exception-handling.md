@@ -1,6 +1,6 @@
 TOC
+* [API -> Custom Exception Handling Middleware](#custom-middleware-for-api)
 * [API -> UseExceptionHandler](#useexceptionhandler-for-api)
-* [API -> CustomExceptionMiddleware](#custom-middleware-for-api)
 * [WebApp -> UseExceptionHandler](#useExceptionHandler-for-webApp)
 * [WebApp -> UseStatusCodePagesWithReExecute](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/error-handling?view=aspnetcore-2.2#usestatuscodepageswithreexecute)
 
