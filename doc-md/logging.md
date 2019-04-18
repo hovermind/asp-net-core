@@ -92,7 +92,7 @@ namespace Foo
     }
 }
 ```
-[Courtesy](https://github.com/datalust/serilog-middleware-example/blob/master/src/Datalust.SerilogMiddlewareExample/Diagnostics/SerilogMiddleware.cs)
+Courtesy: [this](https://github.com/datalust/serilog-middleware-example/blob/master/src/Datalust.SerilogMiddlewareExample/Diagnostics/SerilogMiddleware.cs)
 
 ## Custom RequestResponseLoggingMiddleware Using ILogger
 `RequestResponseLoggingMiddleware.cs`
@@ -172,5 +172,5 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
   // ... ... ...
 }
 ```
-[Courtesy](https://gist.github.com/elanderson/c50b2107de8ee2ed856353dfed9168a2)
+Courtesy: [this](https://gist.github.com/elanderson/c50b2107de8ee2ed856353dfed9168a2)
 
