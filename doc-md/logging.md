@@ -1,7 +1,7 @@
 TOC
 * [Request-Response Logging Middleware Using Serilog](#SerilogMiddleware)
-* [Request Logging Middleware](#)
-* [Response Logging Middleware](#)
+* [Request Logging Middleware](#LogRequestMiddleware)
+* [Response Logging Middleware](#LogResponseMiddleware)
 * Request-Response Logging Middleware Using ILogger
     * [Sample 1](#Custom-RequestResponseLoggingMiddleware-Using-ILogger)
     * [Sample 2](https://stackoverflow.com/a/51305912/4802664)
