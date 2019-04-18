@@ -1,6 +1,7 @@
 TOC
 * [API -> UseExceptionHandler](#)
 * [API -> CustomExceptionMiddleware](#)
+* [WebApp -> UseStatusCodePagesWithReExecute](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/error-handling?view=aspnetcore-2.2#usestatuscodepageswithreexecute)
 
 ## UseExceptionHandler for API
 `Startup..cs`
@@ -158,8 +159,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 ```
 **Courtesy:** https://blogs.msdn.microsoft.com/brandonh/2017/07/31/using-middleware-to-trap-exceptions-in-asp-net-core/
 
-## Web App
-#### UseExceptionHandler
+## UseExceptionHandler for WebApp
 `Startup..cs`
 ```cs
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
