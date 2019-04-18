@@ -316,3 +316,14 @@ namespace AspNetCoreApiLoggingSample.Middleware
     }
 }
 ```
+
+`Startup.cs`
+```cs
+public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+{
+  // Middleware order matters => add before other Middleware
+  app.UseMiddleware<ApiLoggingMiddleware>();
+  
+  // ... ... ...
+}
+```
