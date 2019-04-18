@@ -2,7 +2,9 @@ TOC
 * [Custom Request-Response Logging Middleware Using Serilog](#SerilogMiddleware)
 * [Custom Request Logging Middleware](#)
 * [Custom Response Logging Middleware](#)
-* [Custom Request-Response Logging Middleware Using ILogger](#Custom-RequestResponseLoggingMiddleware-Using-ILogger)
+* Custom Request-Response Logging Middleware Using ILogger
+    * [Sample 1](#Custom-RequestResponseLoggingMiddleware-Using-ILogger)
+    * [Sample 2](https://stackoverflow.com/a/51305912/4802664)
 * [Routes ASP.NET Core log messages through Serilog](https://github.com/serilog/serilog-aspnetcore)
 
 ## SerilogMiddleware
