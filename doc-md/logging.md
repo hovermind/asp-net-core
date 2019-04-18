@@ -178,7 +178,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 ```
 
 ## ApiLoggingMiddleware
-Courtesy: [this](https://github.com/salslab/AspNetCoreApiLoggingSample/blob/master/AspNetCoreApiLoggingSample/Middleware/ApiLoggingMiddleware.cs)   
+Courtesy: [this](https://salslab.com/a/safely-logging-api-requests-and-responses-in-asp-net-core)   
 `ApiLoggingMiddleware.cs`
 ```cs
 using AspNetCoreApiLoggingSample.Data;
