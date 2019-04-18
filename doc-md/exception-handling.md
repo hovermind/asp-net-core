@@ -1,9 +1,8 @@
 TOC
-* [UseExceptionHandler](#)
-* [CustomExceptionMiddleware](#)
+* [API -> UseExceptionHandler](#)
+* [API -> CustomExceptionMiddleware](#)
 
-## API
-#### UseExceptionHandler
+## UseExceptionHandler for API
 `Startup..cs`
 ```cs
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -30,7 +29,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 ```
 **Important:**  `UseExceptionHandler()` must be before `UseMvc()` 
 
-#### Middleware
+## Custom Middleware for API
 1. Error Details Model
 `ErrorDetails.cs`
 ```cs
