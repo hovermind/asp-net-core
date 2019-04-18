@@ -2,11 +2,12 @@ TOC
 * [API -> Custom Exception Handling Middleware](#custom-middleware-for-api)
 * [API -> UseExceptionHandler](#useexceptionhandler-for-api)
 * [WebApp -> UseExceptionHandler](#useexceptionHandler-for-webApp)
-* [WebApp -> UseStatusCodePagesWithReExecute](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/error-handling?view=aspnetcore-2.2#usestatuscodepageswithreexecute)
+* [WebApp -> UseStatusCodePagesWithReExecute](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/error-handling#usestatuscodepageswithreexecute)
 
 **Based on:**
 * [Courtesy](https://blogs.msdn.microsoft.com/brandonh/2017/07/31/using-middleware-to-trap-exceptions-in-asp-net-core/)
 * [StackOverflow Answers](https://stackoverflow.com/questions/38630076/asp-net-core-web-api-exception-handling)
+* [Handle errors in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/error-handling)
 
 ## UseExceptionHandler for API
 `Startup..cs`
@@ -176,7 +177,6 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
     
         app.UseStatusCodePagesWithReExecute("/Error");
         app.UseExceptionHandler("/Error");
-        //app.UseHsts();
     }
     
     // More config...
