@@ -1,7 +1,8 @@
 TOC
-* [Custom RequestResponseLoggingMiddleware Using Serilog](#)
-* [Custom RequestResponseLoggingMiddleware Using ILogger](#)
-* [Custom Request Response Logging Middleware by datalust (developer of Seq)](https://github.com/datalust/serilog-middleware-example/blob/master/src/Datalust.SerilogMiddlewareExample/Diagnostics/SerilogMiddleware.cs)
+* [Custom RequestResponseLoggingMiddleware Using Serilog](#SerilogMiddleware)
+* [Custom Request Logging Middleware](#)
+* [Custom Response Logging Middleware](#)
+* [Custom RequestResponseLoggingMiddleware Using ILogger](#Custom-RequestResponseLoggingMiddleware-Using-ILogger)
 * [Routes ASP.NET Core log messages through Serilog](https://github.com/serilog/serilog-aspnetcore)
 
 ## SerilogMiddleware
