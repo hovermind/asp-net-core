@@ -132,7 +132,7 @@ public class CustomExceptionMiddleware
     }
 }
 ```
-**Better HandleExceptionAsync in middleware**
+**Better `HandleExceptionAsync()` in the middleware**
 ```cs
 private static Task HandleExceptionAsync(HttpContext context, Exception ex)
 {
