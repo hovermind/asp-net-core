@@ -7,7 +7,7 @@ public class IsoDateConverter : IsoDateTimeConverter
 }
 ```
 
-OR (See: [this](https://stackoverflow.com/a/47699340/4802664))
+OR (see: [this](https://stackoverflow.com/a/47699340/4802664))
 ```cs
 public class IsoDateConverter : IsoDateTimeConverter
 {
@@ -33,7 +33,7 @@ public class CreateEmployeeDto
 ```
 
 ## For outgoing dto
-`CreateEmployeeDto.cs`
+`EmployeeDto.cs`
 ```cs
 public class EmployeeDto
 {
@@ -50,7 +50,7 @@ public class EmployeeDto
 ```
 
 OR
-```
+```cs
 public class EmployeeDto
 {
     [Required]
