@@ -1,7 +1,41 @@
-## Web App
-`CreateEmployeeDto.cs`
+## For incoming dto
+`IsoDateConverter.cs`
+```cs
+public class IsoDateConverter : IsoDateTimeConverter
+{
+    public IsoDateConverter() => this.DateTimeFormat = "yyyy/MM/dd";
+}
 ```
+
+OR (See: [this](https://stackoverflow.com/a/47699340/4802664))
+```cs
+public class IsoDateConverter : IsoDateTimeConverter
+{
+    public IsoDateConverter() => this.DateTimeFormat = Culture.DateTimeFormat.ShortDatePattern;
+}
+```
+
+`CreateEmployeeDto.cs`
+```cs
 public class CreateEmployeeDto
+{
+    [Required]
+    [MinLength(3)]
+    public string Name { get; set; }
+    
+    [DataType(DataType.Date)]
+    [Required]
+    [JsonConverter(typeof(IsoDateConverter))]
+    public string DateOfBirth { get; set; }
+
+    public string Address { get; set; }
+}
+```
+
+## For outgoing dto
+`CreateEmployeeDto.cs`
+```cs
+public class EmployeeDto
 {
     [Required]
     [MinLength(3)]
@@ -14,9 +48,10 @@ public class CreateEmployeeDto
     public string Address { get; set; }
 }
 ```
-Or
+
+OR
 ```
-public class CreateEmployeeDto
+public class EmployeeDto
 {
     [Required]
     [MinLength(3)]
