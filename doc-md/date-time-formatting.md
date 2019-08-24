@@ -43,11 +43,14 @@ settings.Converters.Add(new IsoDateTimeConverter()
 config.Formatters.Remove(config.Formatters.JsonFormatter);
 config.Formatters.Add(new JsonNetFormatter(settings)); 
 ```
-See: https://gist.github.com/AlexZeitler/2821442
 
 Another way
 ```
 var jsonFormatter = config.Formatters.JsonFormatter;
 jsonFormatter.SerializerSettings.DateTimeZoneHandling = DateTimeZoneHandling.Utc;
 ```
-See: http://www.hackered.co.uk/articles/asp-net-web-api-controlling-date-formats-with-json-net
+
+See:
+* https://gist.github.com/AlexZeitler/2821442
+* http://www.hackered.co.uk/articles/asp-net-web-api-controlling-date-formats-with-json-net
+* https://forums.asp.net/t/2084573.aspx?UTC+Date+is+being+deserialized+to+server+local+time+when+PUT+and+PATCH+
