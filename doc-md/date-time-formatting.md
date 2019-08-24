@@ -1,3 +1,8 @@
+## Fomatting Datetime Property
+* `DateTime` always has value, so you should use `DateTime?` add '[Required]' annotation
+*  when using string, you need `[DataType(DataType.Date)]`, but when using `DateTime` no need to use `[DataType(DataType.Date)]`
+
+
 ## For API DTO
 ##### Create converter to set format   
 `IsoDateConverter.cs`
